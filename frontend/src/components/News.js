@@ -6,16 +6,11 @@ const News = () => {
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="text-uppercase fw-semibold display-1 text-white">Emissionstabelle</h1>
-            <table>
-              <thead>
-                <tr class="text-white mt-3 mb-4">
-                  <th>Land</th>
-                  <th>Unternehmen</th>
-                  <th>CO2-Ausstoß (in Tonnen)</th>
-                </tr>
-              </thead>
-            </table>
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Aktuelles</h1>
+              <div class="line"></div>
+              <p>Erfahre hier immer alle Neuigkeiten zu unserem Vorhaben.</p>
+            </div>
           </div>
         </div>
       </div>

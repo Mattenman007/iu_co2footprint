@@ -100,3 +100,12 @@ img {
   color: var(--c-brand);
   font-size: 40px;
 }
+
+/*Ausrichtung der Schrift: linksbündig bei LTR, rechtsbündig bei RTL */
+.navbar.rtl .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}

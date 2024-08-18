@@ -3,7 +3,7 @@ import team from '../images/team.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="section-padding">
+    <section id="about" className="section-padding border-top">
       <div className="container">
         <div className="row">
             <div className="col-12 text-center">
