@@ -5,7 +5,6 @@ const db = new sqlite3.Database(':memory:');
 db.serialize(() => {
   db.run("CREATE TABLE emissionen (id INTEGER PRIMARY KEY, land TEXT, unternehmen TEXT, co2 INTEGER)");
 
-  // Fügen Sie hier einige fiktive Daten hinzu
   const stmt = db.prepare("INSERT INTO emissionen (land, unternehmen, co2) VALUES (?, ?, ?)");
   stmt.run("Deutschland", "Der Energieversorger", 10500000);
   stmt.run("Deutschland", "Auto400", 7000000);
