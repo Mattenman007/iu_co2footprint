@@ -6,7 +6,7 @@ db.serialize(() => {
   db.run("CREATE TABLE emissionen (id INTEGER PRIMARY KEY, land TEXT, unternehmen TEXT, co2 INTEGER)");
 
   const stmt = db.prepare("INSERT INTO emissionen (land, unternehmen, co2) VALUES (?, ?, ?)");
-  stmt.run("Deutschland", "Der Energieversorger", 10500000);
+  stmt.run("Deutschland", "Energie BRD", 10500000);
   stmt.run("Deutschland", "Auto400", 7000000);
   stmt.run("Deutschland", "Telomat", 1300000);
   stmt.run("Deutschland", "Kaufmarkt2000", 1200000);

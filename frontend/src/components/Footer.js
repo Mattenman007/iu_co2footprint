@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; 2024 Weltrettung e.V. | All rights reserved.</p>
       <nav>
-        <ul>
+        <ul className="footer-nav">
           <li><a href="#privacy">Datenschutz</a></li>
           <li><a href="#imprint">Impressum</a></li>
         </ul>

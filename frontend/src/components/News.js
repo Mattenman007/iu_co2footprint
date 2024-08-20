@@ -9,7 +9,7 @@ const News = () => {
             <div class="section-title">
               <h1 class="display-4 fw-semibold">Aktuelles</h1>
               <div class="line"></div>
-              <p>Erfahre hier immer alle Neuigkeiten zu unserem Vorhaben.</p>
+              <p>Erfahre hier zuk&uuml;nftig immer alle Neuigkeiten zu unserem Vorhaben.</p>
             </div>
           </div>
         </div>

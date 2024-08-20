@@ -10,7 +10,7 @@ const NavigationMenu = () => {
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-lg bg-white sticky-top ${direction}`}>
+    <nav className={`navbar navbar-expand-lg bg-white ${direction}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Logo" className="small-image"/>Weltrettung e.V.
@@ -21,13 +21,13 @@ const NavigationMenu = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className={`navbar-nav ${direction === 'ltr' ? '' : 'ms-auto'}`}>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/home">Startseite</a>
+              <a className="nav-link active" aria-current="page" href="#home">Startseite</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/news">Aktuelles</a>
+              <a className="nav-link" href="#news">Aktuelles</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">Über uns</a>
+              <a className="nav-link" href="#about">Über uns</a>
             </li>
           </ul>
         </div>

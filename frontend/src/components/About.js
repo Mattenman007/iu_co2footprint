@@ -8,9 +8,9 @@ const About = () => {
         <div className="row">
             <div className="col-12 text-center">
                 <div className="section-title">
-                    <h1 className="display-4 fw-semibold">Über uns</h1>
+                    <h1 className="display-4 fw-semibold">&Uuml;ber uns</h1>
                     <div className="line"></div>
-                    <p>Wir beschäftigen uns mit dem Klimawandel. Unser Ziel ist es, mehr Transparenz darüber zu schaffen, welche Unternehmen und Länder wie viel CO2 jährlich emittieren.</p>
+                    <p>Wir besch&auml;ftigen uns mit dem Klimawandel. Unser Ziel ist es, mehr Transparenz dar&uuml;ber zu schaffen, welche Unternehmen und L&auml;nder wie viel CO2 j&auml;hrlich emittieren.</p>
                 </div>
             </div>
         </div>
@@ -20,10 +20,12 @@ const About = () => {
           </div>
           <div className="col-lg-5">
             <h1>Wer wir sind</h1>
-            <p className="mt-3 mb-4">Wir sind ein interdisziplinäres Team einer Non-Profit-Organisation, das sich mit dem Klimawandel beschäftigt.</p>
+            <p className="mt-3 mb-4">Wir sind ein interdisziplin&auml;res Team einer Non-Profit-Organisation, das sich mit dem Klimawandel besch&auml;ftigt.</p>
             <div className="d-flex pt-4 mb-3">
                 <div className="iconbox me-4">
-                    <i className="ri-mail-line"></i>
+                    <a href="mailto:kontakt@adresse.de">
+                        <i className="ri-mail-line"></i>
+                    </a>
                 </div>
                 <div>
                     <h5>Du willst mit uns in Kontakt treten?</h5>
