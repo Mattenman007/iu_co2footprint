@@ -19,12 +19,14 @@ body {
   padding-top: 80px;
 }
 
+/* Überschriften */
 h1,h2,h3,h4,h5,h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
   color: var(--c-dark);
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: var(--c-brand);
@@ -35,14 +37,10 @@ a:hover {
   color: var(--c-brand-light);
 }
 
+/* Bildgroesse anpassen */
 img {
   max-width: 100%;
   height: auto; 
-}
-
-.section-padding {
-  padding-top: 140px;
-  padding-bottom: 140px;
 }
 
 .small-image {
@@ -50,8 +48,13 @@ img {
   height: auto;
 }
 
-/* Navigation */
+/* Abschnitte */
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
 
+/* Navigation */
 .navbar {
   position: fixed;
   top: 0;
@@ -75,12 +78,31 @@ img {
   color: var(--c-brand);
 }
 
-/* Emissionstabelle */
+/* EmissionsTable.js */
 #emission {
     background: linear-gradient(rgba(0, 0, 0, 0.369), rgb(0, 0, 0)), url(./images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.emission-table {
+  margin: 50px auto 0;
+  text-align: center;
+  width: 60%;
+}
+
+.emission-table th,
+.emission-table td {
+  padding: 10px 20px;
+}
+
+.emission-table th {
+  color: white;
+}
+
+.emission-table tr {
+  margin-top: 15px;
 }
 
 .section-title {
@@ -100,7 +122,7 @@ img {
   margin-right: auto;
 }
 
-/* About */
+/* About.js */
 .iconbox {
   width: 60px;
   height: 60px;
@@ -133,26 +155,7 @@ img {
   margin-right: auto;
 }
 
-/*Tabelle*/
-.emission-table {
-  margin: 50px auto 0;
-  text-align: center;
-  width: 60%;
-}
-
-.emission-table th,
-.emission-table td {
-  padding: 10px 20px;
-}
-
-.emission-table th {
-  color: white;
-}
-
-.emission-table tr {
-  margin-top: 15px;
-}
-
+/* Footer.js */
 .footer {
   background-color: #333;
   color: #fff;

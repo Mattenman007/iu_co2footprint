@@ -5,14 +5,18 @@ const db = require('./database');
 const app = express();
 const PORT = 3001;
 
+//Anfragen von anderen Domains erlauben
 app.use(cors());
 
+//Route definieren
 app.get('/emissionen', (req, res) => {
   const { land, unternehmen, sortby, order } = req.query;
 
+  //Basis-SQL-Abfrage
   let query = "SELECT * FROM emissionen WHERE 1=1";
   const params = [];
 
+  //Abfrage verändern, falls Filterung gewünscht
   if (land) {
     query += " AND LOWER(land) = LOWER(?)";
     params.push(land);
@@ -23,6 +27,7 @@ app.get('/emissionen', (req, res) => {
     params.push(unternehmen);
   }
 
+  //Sortierung
   const validSortColumns = ['land', 'unternehmen'];
   const sortOrder = order && order.toUpperCase() === 'DESC' ? 'DESC' : 'ASC';
 
@@ -30,6 +35,7 @@ app.get('/emissionen', (req, res) => {
     query += ` ORDER BY ${sortby} ${sortOrder}`;
   }
 
+  //Abfrage ausführen
   db.all(query, params, (err, rows) => {
     if (err) {
       res.status(500).json({ error: err.message });

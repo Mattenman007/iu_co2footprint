@@ -2,9 +2,11 @@ const sqlite3 = require('sqlite3').verbose();
 
 const db = new sqlite3.Database(':memory:');
 
+//Tabelle erstellen
 db.serialize(() => {
   db.run("CREATE TABLE emissionen (id INTEGER PRIMARY KEY, land TEXT, unternehmen TEXT, co2 INTEGER)");
 
+  //fiktive Daten
   const stmt = db.prepare("INSERT INTO emissionen (land, unternehmen, co2) VALUES (?, ?, ?)");
   stmt.run("Deutschland", "Energie BRD", 10500000);
   stmt.run("Deutschland", "Auto400", 7000000);
