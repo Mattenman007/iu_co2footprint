@@ -9,6 +9,10 @@ const NavigationMenu = () => {
     setDirection(userLangDirection);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className={`navbar navbar-expand-lg bg-white ${direction}`}>
       <div className="container-fluid">
@@ -21,7 +25,7 @@ const NavigationMenu = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className={`navbar-nav ${direction === 'ltr' ? '' : 'ms-auto'}`}>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#home">Startseite</a>
+            <a className="nav-link" href="#home" onClick={scrollToTop}>Startseite</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#news">Aktuelles</a>
